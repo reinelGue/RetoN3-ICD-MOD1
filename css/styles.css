@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+font-family: 'STIX Two Math', serif;
+}
+
+
+
+body {
+    background-color: #BFC9CA
+    
+    ;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+
+}
+
+header{
+    width: 100%;
+    height: 305x;
+    background-color: #7A5522;
+    color: #fff;
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    z-index: 100;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+#nav-bar{
+    display: none;
+}
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+h1{
+    float: left;
+}
+header .contenedor{
+    display: table;
+}
+.menu{
+position: absolute;
+width: 100%;
+height: 100vh;
+background: #7A5522;
+top: 50px;;
+left:0;
+transition: all 0.5s;
+transform: translateX(-100%);
+}
+#nav-bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+.lista-menu li{
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+
+}
+.lista-menu li a{
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration:none ;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255,255, 0.5) ;
+
+}
+.lista-menu li a:hover{
+    
+    background: rgba(255, 255,255, 0.3) ;
+
+}
+section{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#banner{
+margin-top: 25px;
+position: relative;
+width: 100vw;
+
+
+}
+#banner img{
+    width: 100%;
+    height: 120%;
+}
+#banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translateX(-50%) translateY(-50%);
+    color: #fff;
+}
+#banner h2{
+    font-size: 25px;
+}
+#banner a{
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+}
+#banner a:hover{
+    
+    background: rgba(51,51, 51, 0.8);
+}
+
+.content-flex {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 8%;
+ }
+
+#bienvenidos{
+    margin-left: 40px;
+    text-align: center;
+    color: #17202A ;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#bienvenidos h2 {
+    margin-bottom: 30px;}
+
+
+#blog .contenedor{
+    color: #17202A;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+ ;   
+}
+
+
+#blog article{
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#blog img {
+    width: 70%;
+    max-width: 280px;
+    border-radius: 10px;
+}
+
+
+#blog h3{
+    text-align: center;
+  color:#17202A;
+}
+
+
+#blog h4{
+    text-align: center;
+  
+}
+
+#info{
+    background: #7A5522;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+#info .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info-pet{
+    margin: 5px;
+}
+.info-pet img{
+    width: 280px;
+    height: 230px;
+
+}
+
+footer {
+    background-image: url(imgfondo/hierba.jpg); 
+    margin-top: -13px;
+}
+
+footer  .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 10px;
+    padding-top: 15px;
+
+}
+
+.copy{
+    font-size: 20px;
+    color: #fff;
+}
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+
+}
+
+.sociales a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+@media (min-width: 1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+
+    }
+    header label{
+        display: none;
+    }
+    
+    .lista-menu {
+        display:flex;
+        flex-wrap: wrap;
+    
+    }
+    .contenedor{
+        width: 90%;
+    }
+    #banner img{
+        margin-top: -390px !important;
+    }
+    
+ }
+
+@media (min-width: 480px){
+    #banner h2{
+        font-size: 50px;
+    }
+    #banner a {
+        margin-top: 25px;
+    }
+    
+    
+}
+@media (min-width: 768px){
+    #banner{
+        height: 400px;
+        overflow: hidden;
+    }
+    #banner img{
+        height: auto;
+        margin-top: -100px;
+ } 
+           
+ }
+ 
+
+ @media (max-width: 768px) {
+    .content-flex {
+    display: flex; 
+    flex-direction: column;
+    ;} 
+
+    #bienvenidos {width: 90%;}}
+
+
